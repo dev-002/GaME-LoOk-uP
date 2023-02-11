@@ -1,7 +1,4 @@
-const { rejects } = require('assert')
-const { response } = require('express')
 const express = require('express')
-const { resolve } = require('path')
 const router = express.Router()
 
 router.get('/', (req, res)=>{
@@ -16,10 +13,10 @@ router.post('/', async (req, res)=>{
         .then( response => response.json() )
             .then(data => { 
                 if(data.length === 0 || data === undefined)
-                    res.send('No data found')
+                    res.render('error', { data })
                 res.render('show', {data, searchName}) 
             })
-        .catch( err => res.send(err) )
+        .catch( err => res.render('error') )
 })
 
 module.exports = router

@@ -18,4 +18,4 @@ const searchRoute = require('./routes/search')
 app.use('/', indexRoute)
 app.use('/search', searchRoute)
 
-app.listen( process.env.PORT || 3000, console.log('Server Running...') )
+app.listen( process.env.PORT || 5000, console.log('Server Running...') )

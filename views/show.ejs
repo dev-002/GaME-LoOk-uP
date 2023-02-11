@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container my-5">
     <h2>Results for <%= searchName %> </h2>
 
     <div class="row mt-5">
@@ -7,7 +7,7 @@
                 <div class="card">
                     <img src="<%= record.thumb %>" class="card-img-top" alt="Game Poster">
                     <div class="card-body">
-                      <h5 class="card-title"> <%= record.external %> </h5>
+                      <h5 class="card-title"> <b> <%= record.external %> </b> </h5>
                       <p class="card-text"></p>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"> Game ID : <%= record.gameID %> </li>
@@ -21,6 +21,6 @@
                     </div>
                   </div>
             </div>
-            <% } %>
+          <% } %>
     </div>
 </div>
