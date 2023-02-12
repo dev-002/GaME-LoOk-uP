@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "8-bit Arcade";
+    src: url("resource/font/8_bit_arcade/8-bit\ Arcade\ In.ttf") format("TrueType");
+  }  
+
+body{
+    position: relative;
+    background: repeat center/30% url("resource/background.webp");
+}
+
+/* Utility */
+.margin{
+    margin-top: 10em;
+}
+
+.headerText{
+    position: relative;
+    left: 30%;
+    font: 12em "8-bit Arcade";
+    color: yellow;
+    z-index: auto;
+    text-shadow: 20px 20px black;
+    transform: rotate(-35deg);
+}
+
+.contentText{
+    z-index: 1;
+    font-size: 3em;
+    color: white;
+    text-align: justify;
+}
+
+.btnContainer{
+    width: 100%;
+    text-align: center;
+}
+
+.buttonStyle{
+    margin: 0.5em auto;
+    font: 10em '8-bit Arcade';
+    background-color: transparent;
+    border: 5px solid yellow;
+}
+.buttonStyle>a{
+    margin: 0.5em;
+    text-decoration: none;
+    color: yellow;
+}
