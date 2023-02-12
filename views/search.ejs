@@ -1,6 +1,24 @@
-<div class="container my-5">
-    <form action="/search" method="post">
-        <%- include('_form_field') %>
-        <button type="submit">Search</button>
-    </form>
+<div class="container mt-5">
+    <div class="container margin">
+        <div class="row">
+            <div class="col p-4 contentText">
+                <p class="display-2 headerText" style="font-size: 6em !important; text-align: center;">
+                    Search
+                </p>
+                <form class="mt-4" action="/search" method="post">
+                    <div class="row">
+                            <%- include('_form_field') %>
+                            <button type="submit" class="btn"> <img src="resource/icons/search-128.png" alt="Search Icon"> </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="btnContainer">
+            <button class="btn buttonStyle">
+                <a href="/">Home</a> 
+            </button>
+        </div>
+    </div>
 </div>

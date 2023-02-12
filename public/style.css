@@ -13,13 +13,17 @@ body{
     margin-top: 10em;
 }
 
+/* Index Page */
 .headerText{
-    position: relative;
-    left: 30%;
+    z-index: auto;
     font: 12em "8-bit Arcade";
     color: yellow;
-    z-index: auto;
     text-shadow: 20px 20px black;
+}
+
+.rotate{
+    position: relative;
+    left: 30%;
     transform: rotate(-35deg);
 }
 
