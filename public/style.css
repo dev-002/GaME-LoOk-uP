@@ -13,10 +13,14 @@ body{
     margin-top: 10em;
 }
 
+.textFont{
+    font-family: '8-bit Arcade';
+}
+
 /* Index Page */
 .headerText{
     z-index: auto;
-    font: 12em "8-bit Arcade";
+    font-size: 12em;
     color: yellow;
     text-shadow: 20px 20px black;
 }
@@ -49,4 +53,16 @@ body{
     margin: 0.5em;
     text-decoration: none;
     color: yellow;
+}
+
+/* Show Page */
+.cardImg{
+    width:100%;
+    height: 10em;
+}
+
+/* Error Page */
+.error{
+    font-size: 6em;
+    margin: 3em;
 }

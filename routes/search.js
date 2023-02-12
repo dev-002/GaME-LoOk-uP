@@ -16,7 +16,7 @@ router.post('/', async (req, res)=>{
                     res.render('error', { data })
                 res.render('show', {data, searchName}) 
             })
-        .catch( err => res.render('error') )
+        .catch( data => res.render('error') )
 })
 
 module.exports = router

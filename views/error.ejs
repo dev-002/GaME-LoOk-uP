@@ -1,7 +1,27 @@
 <div class="container">
-    <div class="card my-5">
-        <div class="card-body bg-danger bg-opacity-25">
-          <%= data.length===0?'No Search Result Found':'Error Searching The Query' %>
+  <div class="card my-5">
+    <div class="card-body error textFont">
+      <%= data.length===undefined?'Error Searching The Query':'No Search Result Found' %>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-6">
+        <div class="btnContainer">
+          <button class="btn buttonStyle">
+            <a href="/">Home</a>
+          </button>
         </div>
       </div>
-</div>
+
+      <div class="col-6">
+        <div class="btnContainer">
+          <button class="btn buttonStyle">
+            <a href="/search">Search</a>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
